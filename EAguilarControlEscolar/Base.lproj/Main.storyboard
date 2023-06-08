@@ -135,8 +135,19 @@
                     <view key="view" contentMode="scaleToFill" id="els-WQ-gaa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eWY-aN-MVD">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="i7Y-ZB-XEJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eWY-aN-MVD" firstAttribute="leading" secondItem="i7Y-ZB-XEJ" secondAttribute="leading" id="5VO-0Z-7rK"/>
+                            <constraint firstItem="eWY-aN-MVD" firstAttribute="top" secondItem="i7Y-ZB-XEJ" secondAttribute="top" id="XOq-u7-YhR"/>
+                            <constraint firstItem="i7Y-ZB-XEJ" firstAttribute="bottom" secondItem="eWY-aN-MVD" secondAttribute="bottom" id="gg7-cO-515"/>
+                            <constraint firstItem="i7Y-ZB-XEJ" firstAttribute="trailing" secondItem="eWY-aN-MVD" secondAttribute="trailing" id="qOz-d9-oik"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pFp-KC-WFb"/>
                 </viewController>

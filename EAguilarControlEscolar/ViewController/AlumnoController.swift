@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwipeCellKit
 
 class AlumnoController: UITableViewController {
     
@@ -16,8 +17,7 @@ class AlumnoController: UITableViewController {
         
         tableView.register(UINib(nibName: "AlumnoCell", bundle: .main), forCellReuseIdentifier: "AlumnoCell")
         
-        var alumno = Alumno()
-        alumno.IdAlumno = 0
+    /*    var alumno = Alumno()
         alumno.Nombre = "Eric Daniel.a"
         alumno.ApellidoPaterno = "Hernandez"
         alumno.ApellidoMaterno = "Aguilar"
@@ -27,7 +27,7 @@ class AlumnoController: UITableViewController {
         AlumnoViewModel.Add(alumno: alumno)
         
     
-        
+        */
         
         AlumnoViewModel.Get{result, error in
             if let resultSource = result {
@@ -76,6 +76,7 @@ class AlumnoController: UITableViewController {
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "AlumnoCell", for: indexPath) as! AlumnoCell
             
+            cell.delegate = self
             cell.lblNombreOutlet.text = ("Nobmre:  \(alumnos[indexPath.row].Nombre)")
             cell.lblApellidoPaternoOutlet.text = ("Apellido Paterno:   \(alumnos[indexPath.row].ApellidoPaterno)")
             cell.lblApellidoMaternoOutlet.text = ("Apellido Materno:   \(alumnos[indexPath.row].ApellidoMaterno)")
@@ -90,4 +91,52 @@ class AlumnoController: UITableViewController {
         }
     }
 
+//MARK: swipe cell kit
 
+extension AlumnoController : SwipeTableViewCellDelegate{
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeCellKit.SwipeActionsOrientation) -> [SwipeCellKit.SwipeAction]?
+    {
+        
+        if orientation == .right
+        {
+            let deleteAction = SwipeAction(style: .destructive, title: "Delete")
+            {
+                action, indexPath in
+                print(indexPath.row)
+                
+                print("Se ejecuto la funcion de borrar")
+                //CODIGO A EJECUTAR
+                
+                //AlumnoViewModel.Delete(idAlumno : 2)
+                
+                // let result  = UsuarioViewModel.Delete(idUsuario: self.usuarios[indexPath.row].IdUsuario!)
+               /*
+                if result.Correct!
+                {
+                    self.updateUI()
+                }
+                else
+                {
+                    print("Ocurrio un error")
+                }*/
+                
+            }
+            return [deleteAction]
+        }
+        if orientation == .left {
+            let updateAction = SwipeAction(style: .default, title: "Update") { action, indexPath in
+                
+                //self.IdUsuario = self.usuarios[indexPath.row].IdUsuario!
+                //self.performSegue(withIdentifier: "FormController", sender: self)
+                
+                
+                print("Se ejecuto la funcion de update")
+                //CODIGO A EJECUTAR
+                //
+            }
+            return [updateAction]
+        }
+        return nil
+    }
+}

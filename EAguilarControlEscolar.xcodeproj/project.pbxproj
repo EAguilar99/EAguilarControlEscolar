@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D596072FC325990828439194 /* Pods_EAguilarControlEscolar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27465AEC37359EA9E50DFB38 /* Pods_EAguilarControlEscolar.framework */; };
 		F97D93F42A2F9F6800D77AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D93F32A2F9F6800D77AB3 /* AppDelegate.swift */; };
 		F97D93F62A2F9F6800D77AB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D93F52A2F9F6800D77AB3 /* SceneDelegate.swift */; };
 		F97D93FB2A2F9F6800D77AB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97D93F92A2F9F6800D77AB3 /* Main.storyboard */; };
@@ -24,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27465AEC37359EA9E50DFB38 /* Pods_EAguilarControlEscolar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EAguilarControlEscolar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DCE9154E511CA306B1FDAC8 /* Pods-EAguilarControlEscolar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAguilarControlEscolar.release.xcconfig"; path = "Target Support Files/Pods-EAguilarControlEscolar/Pods-EAguilarControlEscolar.release.xcconfig"; sourceTree = "<group>"; };
+		D9889DE4C6A26C05073DE047 /* Pods-EAguilarControlEscolar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAguilarControlEscolar.debug.xcconfig"; path = "Target Support Files/Pods-EAguilarControlEscolar/Pods-EAguilarControlEscolar.debug.xcconfig"; sourceTree = "<group>"; };
 		F97D93F02A2F9F6800D77AB3 /* EAguilarControlEscolar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EAguilarControlEscolar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97D93F32A2F9F6800D77AB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F97D93F52A2F9F6800D77AB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,17 +51,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D596072FC325990828439194 /* Pods_EAguilarControlEscolar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1BC19070BEC32D4D745EA33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9889DE4C6A26C05073DE047 /* Pods-EAguilarControlEscolar.debug.xcconfig */,
+				3DCE9154E511CA306B1FDAC8 /* Pods-EAguilarControlEscolar.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EAE8D6AB7DEC041DA725A8FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27465AEC37359EA9E50DFB38 /* Pods_EAguilarControlEscolar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F97D93E72A2F9F6800D77AB3 = {
 			isa = PBXGroup;
 			children = (
 				F97D93F22A2F9F6800D77AB3 /* EAguilarControlEscolar */,
 				F97D93F12A2F9F6800D77AB3 /* Products */,
+				D1BC19070BEC32D4D745EA33 /* Pods */,
+				EAE8D6AB7DEC041DA725A8FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F97D94042A2F9F6900D77AB3 /* Build configuration list for PBXNativeTarget "EAguilarControlEscolar" */;
 			buildPhases = (
+				04E43639212D21B82857E567 /* [CP] Check Pods Manifest.lock */,
 				F97D93EC2A2F9F6800D77AB3 /* Sources */,
 				F97D93ED2A2F9F6800D77AB3 /* Frameworks */,
 				F97D93EE2A2F9F6800D77AB3 /* Resources */,
+				6F6D4E43C086D8E07FDBC468 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,6 +224,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04E43639212D21B82857E567 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EAguilarControlEscolar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F6D4E43C086D8E07FDBC468 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EAguilarControlEscolar/Pods-EAguilarControlEscolar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EAguilarControlEscolar/Pods-EAguilarControlEscolar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EAguilarControlEscolar/Pods-EAguilarControlEscolar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F97D93EC2A2F9F6800D77AB3 /* Sources */ = {
@@ -354,6 +423,7 @@
 		};
 		F97D94052A2F9F6900D77AB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9889DE4C6A26C05073DE047 /* Pods-EAguilarControlEscolar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,6 +452,7 @@
 		};
 		F97D94062A2F9F6900D77AB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DCE9154E511CA306B1FDAC8 /* Pods-EAguilarControlEscolar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

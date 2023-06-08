@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import SwipeCellKit
 
-class AlumnoCell: UITableViewCell {
+class AlumnoCell: SwipeTableViewCell {
 
     @IBOutlet weak var lblNombreOutlet: UILabel!
     @IBOutlet weak var lblApellidoPaternoOutlet: UILabel!
