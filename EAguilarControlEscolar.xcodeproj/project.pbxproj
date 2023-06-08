@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		F97D93F42A2F9F6800D77AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D93F32A2F9F6800D77AB3 /* AppDelegate.swift */; };
 		F97D93F62A2F9F6800D77AB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D93F52A2F9F6800D77AB3 /* SceneDelegate.swift */; };
-		F97D93F82A2F9F6800D77AB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D93F72A2F9F6800D77AB3 /* ViewController.swift */; };
 		F97D93FB2A2F9F6800D77AB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97D93F92A2F9F6800D77AB3 /* Main.storyboard */; };
 		F97D93FD2A2F9F6900D77AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F97D93FC2A2F9F6900D77AB3 /* Assets.xcassets */; };
 		F97D94002A2F9F6900D77AB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97D93FE2A2F9F6900D77AB3 /* LaunchScreen.storyboard */; };
+		F97D94082A2F9FE100D77AB3 /* AlumnoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D94072A2F9FE100D77AB3 /* AlumnoViewModel.swift */; };
+		F97D940D2A2FB24E00D77AB3 /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D940C2A2FB24E00D77AB3 /* Alumno.swift */; };
+		F97D940F2A2FB45200D77AB3 /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D940E2A2FB45200D77AB3 /* Materia.swift */; };
+		F97D94132A2FB6DF00D77AB3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D94122A2FB6DF00D77AB3 /* Result.swift */; };
+		F97D94152A2FD93000D77AB3 /* MateriaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D94142A2FD93000D77AB3 /* MateriaViewModel.swift */; };
+		F97D94192A2FE4F700D77AB3 /* AlumnoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D94172A2FE4F700D77AB3 /* AlumnoCell.swift */; };
+		F97D941A2A2FE4F700D77AB3 /* AlumnoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97D94182A2FE4F700D77AB3 /* AlumnoCell.xib */; };
+		F97D941D2A2FE74B00D77AB3 /* AlumnoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D941C2A2FE74B00D77AB3 /* AlumnoController.swift */; };
+		F97F7A372A3241A3000F873A /* MateriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F7A362A3241A3000F873A /* MateriaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F97D93F02A2F9F6800D77AB3 /* EAguilarControlEscolar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EAguilarControlEscolar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97D93F32A2F9F6800D77AB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F97D93F52A2F9F6800D77AB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F97D93F72A2F9F6800D77AB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F97D93FA2A2F9F6800D77AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F97D93FC2A2F9F6900D77AB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F97D93FF2A2F9F6900D77AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F97D94012A2F9F6900D77AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F97D94072A2F9FE100D77AB3 /* AlumnoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoViewModel.swift; sourceTree = "<group>"; };
+		F97D940C2A2FB24E00D77AB3 /* Alumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
+		F97D940E2A2FB45200D77AB3 /* Materia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
+		F97D94122A2FB6DF00D77AB3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F97D94142A2FD93000D77AB3 /* MateriaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateriaViewModel.swift; sourceTree = "<group>"; };
+		F97D94172A2FE4F700D77AB3 /* AlumnoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoCell.swift; sourceTree = "<group>"; };
+		F97D94182A2FE4F700D77AB3 /* AlumnoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlumnoCell.xib; sourceTree = "<group>"; };
+		F97D941C2A2FE74B00D77AB3 /* AlumnoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoController.swift; sourceTree = "<group>"; };
+		F97F7A362A3241A3000F873A /* MateriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateriaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,63 @@
 		F97D93F22A2F9F6800D77AB3 /* EAguilarControlEscolar */ = {
 			isa = PBXGroup;
 			children = (
+				F97D941B2A2FE71600D77AB3 /* ViewModel */,
+				F97D940B2A2FB1A900D77AB3 /* ViewController */,
+				F97D940A2A2FB19600D77AB3 /* View */,
+				F97D94092A2FB17300D77AB3 /* Model */,
 				F97D93F32A2F9F6800D77AB3 /* AppDelegate.swift */,
 				F97D93F52A2F9F6800D77AB3 /* SceneDelegate.swift */,
-				F97D93F72A2F9F6800D77AB3 /* ViewController.swift */,
 				F97D93F92A2F9F6800D77AB3 /* Main.storyboard */,
 				F97D93FC2A2F9F6900D77AB3 /* Assets.xcassets */,
 				F97D93FE2A2F9F6900D77AB3 /* LaunchScreen.storyboard */,
 				F97D94012A2F9F6900D77AB3 /* Info.plist */,
 			);
 			path = EAguilarControlEscolar;
+			sourceTree = "<group>";
+		};
+		F97D94092A2FB17300D77AB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F97D940C2A2FB24E00D77AB3 /* Alumno.swift */,
+				F97D940E2A2FB45200D77AB3 /* Materia.swift */,
+				F97D94122A2FB6DF00D77AB3 /* Result.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F97D940A2A2FB19600D77AB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F97D94162A2FE4D400D77AB3 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F97D940B2A2FB1A900D77AB3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F97D941C2A2FE74B00D77AB3 /* AlumnoController.swift */,
+				F97F7A362A3241A3000F873A /* MateriaController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F97D94162A2FE4D400D77AB3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F97D94172A2FE4F700D77AB3 /* AlumnoCell.swift */,
+				F97D94182A2FE4F700D77AB3 /* AlumnoCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F97D941B2A2FE71600D77AB3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F97D94072A2F9FE100D77AB3 /* AlumnoViewModel.swift */,
+				F97D94142A2FD93000D77AB3 /* MateriaViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +192,7 @@
 				F97D94002A2F9F6900D77AB3 /* LaunchScreen.storyboard in Resources */,
 				F97D93FD2A2F9F6900D77AB3 /* Assets.xcassets in Resources */,
 				F97D93FB2A2F9F6800D77AB3 /* Main.storyboard in Resources */,
+				F97D941A2A2FE4F700D77AB3 /* AlumnoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +203,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F97D93F82A2F9F6800D77AB3 /* ViewController.swift in Sources */,
+				F97D94152A2FD93000D77AB3 /* MateriaViewModel.swift in Sources */,
+				F97D94192A2FE4F700D77AB3 /* AlumnoCell.swift in Sources */,
+				F97D940D2A2FB24E00D77AB3 /* Alumno.swift in Sources */,
+				F97D94082A2F9FE100D77AB3 /* AlumnoViewModel.swift in Sources */,
 				F97D93F42A2F9F6800D77AB3 /* AppDelegate.swift in Sources */,
+				F97D94132A2FB6DF00D77AB3 /* Result.swift in Sources */,
+				F97D941D2A2FE74B00D77AB3 /* AlumnoController.swift in Sources */,
 				F97D93F62A2F9F6800D77AB3 /* SceneDelegate.swift in Sources */,
+				F97D940F2A2FB45200D77AB3 /* Materia.swift in Sources */,
+				F97F7A372A3241A3000F873A /* MateriaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
