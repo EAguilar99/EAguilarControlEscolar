@@ -8,6 +8,9 @@
 import Foundation
 class AlumnoViewModel
 {
+    
+    var idAlumno = 0
+    
     static func Get(response1 : @escaping(Result<Alumno>?,Error?)->Void)
     {
         let url = URL(string: "http://192.168.0.52/api/alumno")!

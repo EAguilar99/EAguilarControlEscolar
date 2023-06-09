@@ -20,8 +20,10 @@
 		F97D94152A2FD93000D77AB3 /* MateriaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D94142A2FD93000D77AB3 /* MateriaViewModel.swift */; };
 		F97D94192A2FE4F700D77AB3 /* AlumnoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D94172A2FE4F700D77AB3 /* AlumnoCell.swift */; };
 		F97D941A2A2FE4F700D77AB3 /* AlumnoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97D94182A2FE4F700D77AB3 /* AlumnoCell.xib */; };
-		F97D941D2A2FE74B00D77AB3 /* AlumnoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D941C2A2FE74B00D77AB3 /* AlumnoController.swift */; };
 		F97F7A372A3241A3000F873A /* MateriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F7A362A3241A3000F873A /* MateriaController.swift */; };
+		F9BFC1002A33B26C000BDE35 /* AlumnoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFC0FF2A33B26C000BDE35 /* AlumnoController.swift */; };
+		F9E06AD22A327004002BEB93 /* MateriaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E06AD02A327004002BEB93 /* MateriaCell.swift */; };
+		F9E06AD32A327005002BEB93 /* MateriaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9E06AD12A327004002BEB93 /* MateriaCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +44,10 @@
 		F97D94142A2FD93000D77AB3 /* MateriaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateriaViewModel.swift; sourceTree = "<group>"; };
 		F97D94172A2FE4F700D77AB3 /* AlumnoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoCell.swift; sourceTree = "<group>"; };
 		F97D94182A2FE4F700D77AB3 /* AlumnoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlumnoCell.xib; sourceTree = "<group>"; };
-		F97D941C2A2FE74B00D77AB3 /* AlumnoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoController.swift; sourceTree = "<group>"; };
 		F97F7A362A3241A3000F873A /* MateriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateriaController.swift; sourceTree = "<group>"; };
+		F9BFC0FF2A33B26C000BDE35 /* AlumnoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoController.swift; sourceTree = "<group>"; };
+		F9E06AD02A327004002BEB93 /* MateriaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateriaCell.swift; sourceTree = "<group>"; };
+		F9E06AD12A327004002BEB93 /* MateriaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MateriaCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +68,6 @@
 				D9889DE4C6A26C05073DE047 /* Pods-EAguilarControlEscolar.debug.xcconfig */,
 				3DCE9154E511CA306B1FDAC8 /* Pods-EAguilarControlEscolar.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -98,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F97D941B2A2FE71600D77AB3 /* ViewModel */,
-				F97D940B2A2FB1A900D77AB3 /* ViewController */,
+				F97D940B2A2FB1A900D77AB3 /* Controller */,
 				F97D940A2A2FB19600D77AB3 /* View */,
 				F97D94092A2FB17300D77AB3 /* Model */,
 				F97D93F32A2F9F6800D77AB3 /* AppDelegate.swift */,
@@ -129,13 +132,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F97D940B2A2FB1A900D77AB3 /* ViewController */ = {
+		F97D940B2A2FB1A900D77AB3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F97D941C2A2FE74B00D77AB3 /* AlumnoController.swift */,
 				F97F7A362A3241A3000F873A /* MateriaController.swift */,
+				F9BFC0FF2A33B26C000BDE35 /* AlumnoController.swift */,
 			);
-			path = ViewController;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		F97D94162A2FE4D400D77AB3 /* Cell */ = {
@@ -143,6 +146,8 @@
 			children = (
 				F97D94172A2FE4F700D77AB3 /* AlumnoCell.swift */,
 				F97D94182A2FE4F700D77AB3 /* AlumnoCell.xib */,
+				F9E06AD02A327004002BEB93 /* MateriaCell.swift */,
+				F9E06AD12A327004002BEB93 /* MateriaCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 			files = (
 				F97D94002A2F9F6900D77AB3 /* LaunchScreen.storyboard in Resources */,
 				F97D93FD2A2F9F6900D77AB3 /* Assets.xcassets in Resources */,
+				F9E06AD32A327005002BEB93 /* MateriaCell.xib in Resources */,
 				F97D93FB2A2F9F6800D77AB3 /* Main.storyboard in Resources */,
 				F97D941A2A2FE4F700D77AB3 /* AlumnoCell.xib in Resources */,
 			);
@@ -272,13 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9BFC1002A33B26C000BDE35 /* AlumnoController.swift in Sources */,
 				F97D94152A2FD93000D77AB3 /* MateriaViewModel.swift in Sources */,
 				F97D94192A2FE4F700D77AB3 /* AlumnoCell.swift in Sources */,
 				F97D940D2A2FB24E00D77AB3 /* Alumno.swift in Sources */,
+				F9E06AD22A327004002BEB93 /* MateriaCell.swift in Sources */,
 				F97D94082A2F9FE100D77AB3 /* AlumnoViewModel.swift in Sources */,
 				F97D93F42A2F9F6800D77AB3 /* AppDelegate.swift in Sources */,
 				F97D94132A2FB6DF00D77AB3 /* Result.swift in Sources */,
-				F97D941D2A2FE74B00D77AB3 /* AlumnoController.swift in Sources */,
 				F97D93F62A2F9F6800D77AB3 /* SceneDelegate.swift in Sources */,
 				F97D940F2A2FB45200D77AB3 /* Materia.swift in Sources */,
 				F97F7A372A3241A3000F873A /* MateriaController.swift in Sources */,

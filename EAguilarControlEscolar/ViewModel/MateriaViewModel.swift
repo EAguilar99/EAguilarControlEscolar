@@ -28,6 +28,6 @@ class MateriaViewModel
             }
             
         }.resume()
-        
     }
+    
 }

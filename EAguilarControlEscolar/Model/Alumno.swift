@@ -15,7 +15,7 @@ struct Alumno : Codable
     var ApellidoMaterno : String
     var FechaNacimiento : String?
     var Genero : String
-    var Telefono : String
+    var Telefono : String?
     
     init() {
         self.IdAlumno = 0
