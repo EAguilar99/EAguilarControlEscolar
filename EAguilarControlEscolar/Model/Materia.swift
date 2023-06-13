@@ -9,8 +9,8 @@ import Foundation
 
 struct Materia : Codable
 {
-    var IdMateria : Int
-    var Nombre : String
+    var IdMateria : Int?
+    var Nombre : String?
     var Costo : Double?
     
     init() {

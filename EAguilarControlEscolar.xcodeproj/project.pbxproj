@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D596072FC325990828439194 /* Pods_EAguilarControlEscolar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27465AEC37359EA9E50DFB38 /* Pods_EAguilarControlEscolar.framework */; };
+		F915CEC82A37B683006D428A /* AlumnoMateriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915CEC72A37B683006D428A /* AlumnoMateriaController.swift */; };
+		F915CECA2A37B6FC006D428A /* AlumnoMateria.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915CEC92A37B6FC006D428A /* AlumnoMateria.swift */; };
+		F915CECC2A37B788006D428A /* AlumnoMateriaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915CECB2A37B788006D428A /* AlumnoMateriaViewModel.swift */; };
 		F97D93F42A2F9F6800D77AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D93F32A2F9F6800D77AB3 /* AppDelegate.swift */; };
 		F97D93F62A2F9F6800D77AB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D93F52A2F9F6800D77AB3 /* SceneDelegate.swift */; };
 		F97D93FB2A2F9F6800D77AB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97D93F92A2F9F6800D77AB3 /* Main.storyboard */; };
@@ -21,7 +24,10 @@
 		F97D94192A2FE4F700D77AB3 /* AlumnoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97D94172A2FE4F700D77AB3 /* AlumnoCell.swift */; };
 		F97D941A2A2FE4F700D77AB3 /* AlumnoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97D94182A2FE4F700D77AB3 /* AlumnoCell.xib */; };
 		F97F7A372A3241A3000F873A /* MateriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F7A362A3241A3000F873A /* MateriaController.swift */; };
+		F99EEBA12A37904F002229B4 /* FromMateriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99EEBA02A37904F002229B4 /* FromMateriaController.swift */; };
 		F9BFC1002A33B26C000BDE35 /* AlumnoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFC0FF2A33B26C000BDE35 /* AlumnoController.swift */; };
+		F9BFC1042A33B573000BDE35 /* FormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFC1032A33B573000BDE35 /* FormController.swift */; };
+		F9BFC1062A33FD22000BDE35 /* AlumnoMateriaGetAllController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BFC1052A33FD22000BDE35 /* AlumnoMateriaGetAllController.swift */; };
 		F9E06AD22A327004002BEB93 /* MateriaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E06AD02A327004002BEB93 /* MateriaCell.swift */; };
 		F9E06AD32A327005002BEB93 /* MateriaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9E06AD12A327004002BEB93 /* MateriaCell.xib */; };
 /* End PBXBuildFile section */
@@ -30,6 +36,9 @@
 		27465AEC37359EA9E50DFB38 /* Pods_EAguilarControlEscolar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EAguilarControlEscolar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCE9154E511CA306B1FDAC8 /* Pods-EAguilarControlEscolar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAguilarControlEscolar.release.xcconfig"; path = "Target Support Files/Pods-EAguilarControlEscolar/Pods-EAguilarControlEscolar.release.xcconfig"; sourceTree = "<group>"; };
 		D9889DE4C6A26C05073DE047 /* Pods-EAguilarControlEscolar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAguilarControlEscolar.debug.xcconfig"; path = "Target Support Files/Pods-EAguilarControlEscolar/Pods-EAguilarControlEscolar.debug.xcconfig"; sourceTree = "<group>"; };
+		F915CEC72A37B683006D428A /* AlumnoMateriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoMateriaController.swift; sourceTree = "<group>"; };
+		F915CEC92A37B6FC006D428A /* AlumnoMateria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoMateria.swift; sourceTree = "<group>"; };
+		F915CECB2A37B788006D428A /* AlumnoMateriaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoMateriaViewModel.swift; sourceTree = "<group>"; };
 		F97D93F02A2F9F6800D77AB3 /* EAguilarControlEscolar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EAguilarControlEscolar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97D93F32A2F9F6800D77AB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F97D93F52A2F9F6800D77AB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +54,10 @@
 		F97D94172A2FE4F700D77AB3 /* AlumnoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoCell.swift; sourceTree = "<group>"; };
 		F97D94182A2FE4F700D77AB3 /* AlumnoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlumnoCell.xib; sourceTree = "<group>"; };
 		F97F7A362A3241A3000F873A /* MateriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateriaController.swift; sourceTree = "<group>"; };
+		F99EEBA02A37904F002229B4 /* FromMateriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromMateriaController.swift; sourceTree = "<group>"; };
 		F9BFC0FF2A33B26C000BDE35 /* AlumnoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoController.swift; sourceTree = "<group>"; };
+		F9BFC1032A33B573000BDE35 /* FormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormController.swift; sourceTree = "<group>"; };
+		F9BFC1052A33FD22000BDE35 /* AlumnoMateriaGetAllController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnoMateriaGetAllController.swift; sourceTree = "<group>"; };
 		F9E06AD02A327004002BEB93 /* MateriaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateriaCell.swift; sourceTree = "<group>"; };
 		F9E06AD12A327004002BEB93 /* MateriaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MateriaCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +89,33 @@
 				27465AEC37359EA9E50DFB38 /* Pods_EAguilarControlEscolar.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F915CEC42A37B618006D428A /* Alumno */ = {
+			isa = PBXGroup;
+			children = (
+				F9BFC0FF2A33B26C000BDE35 /* AlumnoController.swift */,
+				F99EEBA02A37904F002229B4 /* FromMateriaController.swift */,
+			);
+			path = Alumno;
+			sourceTree = "<group>";
+		};
+		F915CEC52A37B62B006D428A /* Materia */ = {
+			isa = PBXGroup;
+			children = (
+				F97F7A362A3241A3000F873A /* MateriaController.swift */,
+				F9BFC1032A33B573000BDE35 /* FormController.swift */,
+			);
+			path = Materia;
+			sourceTree = "<group>";
+		};
+		F915CEC62A37B633006D428A /* AlumnoMateria */ = {
+			isa = PBXGroup;
+			children = (
+				F9BFC1052A33FD22000BDE35 /* AlumnoMateriaGetAllController.swift */,
+				F915CEC72A37B683006D428A /* AlumnoMateriaController.swift */,
+			);
+			path = AlumnoMateria;
 			sourceTree = "<group>";
 		};
 		F97D93E72A2F9F6800D77AB3 = {
@@ -119,6 +158,7 @@
 			children = (
 				F97D940C2A2FB24E00D77AB3 /* Alumno.swift */,
 				F97D940E2A2FB45200D77AB3 /* Materia.swift */,
+				F915CEC92A37B6FC006D428A /* AlumnoMateria.swift */,
 				F97D94122A2FB6DF00D77AB3 /* Result.swift */,
 			);
 			path = Model;
@@ -135,8 +175,9 @@
 		F97D940B2A2FB1A900D77AB3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F97F7A362A3241A3000F873A /* MateriaController.swift */,
-				F9BFC0FF2A33B26C000BDE35 /* AlumnoController.swift */,
+				F915CEC62A37B633006D428A /* AlumnoMateria */,
+				F915CEC52A37B62B006D428A /* Materia */,
+				F915CEC42A37B618006D428A /* Alumno */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,6 +198,7 @@
 			children = (
 				F97D94072A2F9FE100D77AB3 /* AlumnoViewModel.swift */,
 				F97D94142A2FD93000D77AB3 /* MateriaViewModel.swift */,
+				F915CECB2A37B788006D428A /* AlumnoMateriaViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -281,14 +323,20 @@
 				F9BFC1002A33B26C000BDE35 /* AlumnoController.swift in Sources */,
 				F97D94152A2FD93000D77AB3 /* MateriaViewModel.swift in Sources */,
 				F97D94192A2FE4F700D77AB3 /* AlumnoCell.swift in Sources */,
+				F915CECA2A37B6FC006D428A /* AlumnoMateria.swift in Sources */,
+				F9BFC1042A33B573000BDE35 /* FormController.swift in Sources */,
 				F97D940D2A2FB24E00D77AB3 /* Alumno.swift in Sources */,
 				F9E06AD22A327004002BEB93 /* MateriaCell.swift in Sources */,
+				F9BFC1062A33FD22000BDE35 /* AlumnoMateriaGetAllController.swift in Sources */,
 				F97D94082A2F9FE100D77AB3 /* AlumnoViewModel.swift in Sources */,
+				F915CEC82A37B683006D428A /* AlumnoMateriaController.swift in Sources */,
 				F97D93F42A2F9F6800D77AB3 /* AppDelegate.swift in Sources */,
+				F915CECC2A37B788006D428A /* AlumnoMateriaViewModel.swift in Sources */,
 				F97D94132A2FB6DF00D77AB3 /* Result.swift in Sources */,
 				F97D93F62A2F9F6800D77AB3 /* SceneDelegate.swift in Sources */,
 				F97D940F2A2FB45200D77AB3 /* Materia.swift in Sources */,
 				F97F7A372A3241A3000F873A /* MateriaController.swift in Sources */,
+				F99EEBA12A37904F002229B4 /* FromMateriaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

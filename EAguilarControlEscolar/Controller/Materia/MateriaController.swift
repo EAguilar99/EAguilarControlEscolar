@@ -10,6 +10,8 @@ import SwipeCellKit
 
 class MateriaController: UIViewController{
     
+    var IdMateria : Int  = 0
+    
     var materias : [Materia] = []
     
     @IBOutlet weak var TableViewControllerOutlet: UITableView!
@@ -44,6 +46,8 @@ extension MateriaController  : UITableViewDataSource, UITableViewDelegate
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MateriaCell", for: indexPath) as! MateriaCell
         
+        cell.delegate = self
+        
         cell.lblNombreOutlet.text = materias[indexPath.row].Nombre
         cell.lblCostoOultet.text = String(materias[indexPath.row].Costo!)
         
@@ -51,7 +55,51 @@ extension MateriaController  : UITableViewDataSource, UITableViewDelegate
         
         return cell
     }
+}
 
+
+
+
+//MARK: swipecell
+
+extension MateriaController : SwipeTableViewCellDelegate
+{
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeCellKit.SwipeActionsOrientation) -> [SwipeCellKit.SwipeAction]?
+    {
+        
+        if orientation == .right
+        {
+            let deleteAction = SwipeAction(style: .destructive, title: "Delete")
+            {
+                action, indexPath in
+                print(indexPath.row)
+                
+                print("Se ejecuto la funcion de borrar")
+                //CODIGO A EJECUTAR
+                //MateriaViewModel.Delete(idMateria: self.IdMateria)
+                
+                MateriaViewModel.Delete(idMateria: self.materias[indexPath.row].IdMateria!)
+                self.updateUI()
+                
+            }
+            return [deleteAction]
+        }
+        if orientation == .left {
+            let updateAction = SwipeAction(style: .default, title: "Update") { action, indexPath in
+                
+                self.IdMateria = self.materias[indexPath.row].IdMateria!
+                self.performSegue(withIdentifier: "FormMateriaController", sender: self)
+                
+                print("Se ejecuto la funcion de update")
+                //CODIGO A EJECUTAR
+                //
+            }
+            return [updateAction]
+        }
+        return nil
+    }
+    
+    
     func updateUI()
     {
         MateriaViewModel.Get{result, error in
@@ -74,4 +122,17 @@ extension MateriaController  : UITableViewDataSource, UITableViewDelegate
         }
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue , sender : Any?)
+    {
+        
+        if segue.identifier == "FormMateriaController"
+        {
+            let formControl = segue.destination as!  FromMateriaController
+            formControl.IdMateria  = self.IdMateria
+        }
+    }
+    
+    
 }
+
